@@ -40,6 +40,7 @@ class ContactForm extends Component {
             onChange={this.handleChange}
             id={this.nameInputId}
             className={s.input}
+            value={this.state.name}
           />
         </label>
         <label htmlFor={this.telInputId} className={s.label}>
@@ -53,6 +54,7 @@ class ContactForm extends Component {
             onChange={this.handleChange}
             id={this.telInputId}
             className={s.input}
+            value={this.state.number}
           />
         </label>
         <button type="submit" className={s.btn}>
